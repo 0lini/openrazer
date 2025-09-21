@@ -7,6 +7,8 @@ sysfs interface, the Python daemon (openrazer-daemon) exposes this on it's turn 
 
 It also includes Python libraries for applications and scripts to use that communicate to the daemon over D-Bus.
 
+For comprehensive debugging and testing instructions, see [DEBUGGING_AND_TESTING.md](DEBUGGING_AND_TESTING.md).
+
 ## Add New Device Support
 
 If you want to add support for a new hardware device it's often required to make changes to both the kernel module (`driver/`) and the Python sources (`daemon/`).

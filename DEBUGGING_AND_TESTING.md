@@ -2,6 +2,20 @@
 
 This guide provides comprehensive instructions for debugging and testing OpenRazer on your system, whether you have physical Razer devices or want to test without hardware.
 
+## Table of Contents
+
+- [Quick Diagnostics](#quick-diagnostics)
+- [Manual System Check](#manual-system-check)
+- [Testing Without Physical Hardware](#testing-without-physical-hardware)
+- [Device-Specific Testing](#device-specific-testing)
+- [Debugging Common Issues](#debugging-common-issues)
+- [Log Analysis](#log-analysis)
+- [Development Testing](#development-testing)
+- [Advanced Debugging](#advanced-debugging)
+- [Performance Testing](#performance-testing)
+- [Contributing Test Results](#contributing-test-results)
+- [Useful Commands Reference](#useful-commands-reference)
+
 ## Quick Diagnostics
 
 ### Automated System Test
@@ -19,6 +33,20 @@ This script will:
 - Validate device detection
 - Check daemon status
 - Test basic device functionality
+
+### Interactive Debug Workflow
+
+For a guided debugging experience:
+
+```bash
+python3 scripts/debug_workflow.py
+```
+
+This script provides a step-by-step debugging workflow that:
+- Walks through each potential issue systematically
+- Provides specific tips for each problem found
+- Shows commands being executed and their output
+- Gives prioritized next steps for fixing issues
 
 ### Quick Test Setup (No Hardware Required)
 
@@ -474,8 +502,11 @@ When reporting issues or contributing, please include:
 ## Useful Commands Reference
 
 ```bash
-# Quick system health check
+# Comprehensive system health check
 python3 scripts/test_system.py
+
+# Interactive debugging workflow
+python3 scripts/debug_workflow.py
 
 # Quick device check
 lsusb | grep 1532 && echo "Razer device found" || echo "No Razer device found"
