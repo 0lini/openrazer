@@ -4,7 +4,9 @@ A collection of Linux drivers for Razer devices - providing kernel drivers, DBus
 
 ## Something not working?
 
-Sometimes there are problems with the driver installation due to missing kernel modules or secure boot. Please refer to the [Troubleshooting wiki page](https://github.com/openrazer/openrazer/wiki/Troubleshooting) for guidance.
+Sometimes there are problems with the driver installation due to missing kernel modules or secure boot. For comprehensive debugging and testing instructions, see [DEBUGGING_AND_TESTING.md](DEBUGGING_AND_TESTING.md).
+
+You can also refer to the [Troubleshooting wiki page](https://github.com/openrazer/openrazer/wiki/Troubleshooting) for additional guidance.
 
 If the troubleshooting guide did not pinpoint the problem, [try searching open/closed issues](https://github.com/openrazer/openrazer/issues?q=is%3Aissue+) before creating a new one.
 
