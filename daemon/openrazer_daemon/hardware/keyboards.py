@@ -2223,7 +2223,7 @@ class RazerBlackWidowV4Pro75PCTWired(_RippleKeyboard):
     EVENT_FILE_REGEX = re.compile(r'.*Razer_Razer_BlackWidow_V4_Pro_75(-if01)?-event-kbd')
 
     USB_VID = 0x1532
-    USB_PID = 0x02b3
+    USB_PID = 0x02B3
     HAS_MATRIX = True
     WAVE_DIRS = (1, 2)
     MATRIX_DIMS = [8, 23]
@@ -2247,4 +2247,4 @@ class RazerBlackWidowV4Pro75PCTWireless(_RippleKeyboard):
     """
     EVENT_FILE_REGEX = re.compile(r'.*Razer_Razer_BlackWidow_V4_Pro_75(_\d+)?(-if01)?-event-kbd')
 
-    USB_PID = 0x02b4
+    USB_PID = 0x02B4
